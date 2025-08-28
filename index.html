@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark King - الصفحة الرئيسية</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navbar -->
+<header class="bg-white shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <i class="fa-solid fa-crown text-yellow-500 text-xl"></i>
+      <span class="font-bold text-lg">Dark <span class="text-yellow-500">King</span></span>
+    </div>
+
+    <!-- Desktop Links -->
+    <nav class="hidden md:flex items-center space-x-3 space-x-reverse text-sm font-medium">
+      <!-- Services Dropdown -->
+      <div class="relative group">
+        <button class="px-3 py-1 rounded-full border border-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-600 transition flex items-center">
+          <i class="fa-solid fa-bars mr-1"></i> الخدمات
+        </button>
+        <div class="absolute right-0 mt-2 w-56 bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 invisible group-hover:visible transition-all">
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100">التدريب الرياضي</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100">التغذيه الصحيه</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100">المتابعه الصحيه</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100">الفعاليات الرياضيه</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100">بطولات ومسابقات</a>
+          <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100">الراحه والاستجمام</a>
+        </div>
+      </div>
+      <!-- Direct Links -->
+      <a href="#" class="px-3 py-1 rounded-full border border-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-600 transition">
+        <i class="fa-solid fa-house mr-1"></i> الرئيسية
+      </a>
+      <a href="#" class="px-3 py-1 rounded-full border border-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-600 transition">
+        <i class="fa-solid fa-shop mr-1"></i> التسوق
+      </a>
+      <a href="#" class="px-3 py-1 rounded-full border border-gray-300 text-gray-700 hover:bg-yellow-100 hover:text-yellow-600 transition">
+        <i class="fa-solid fa-headset mr-1"></i> الدعم والتواصل
+      </a>
+    </nav>
+
+    <!-- Mobile Menu Button -->
+<div class="md:hidden flex justify-end">
+  <button id="mobile-menu-btn" class="bg-yellow-500 hover:bg-yellow-600 text-white p-3 rounded-full flex items-center justify-center transition-shadow shadow-md">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+</div>
+
+  </div>
+</header>
+
+<!-- Mobile Modal Menu -->
+<div id="mobile-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white w-11/12 max-w-sm rounded-lg shadow-lg p-6 space-y-3">
+    <button id="close-modal" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800"><i class="fa-solid fa-xmark"></i></button>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100 rounded">التدريب الرياضي</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100 rounded">التغذيه الصحيه</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100 rounded">المتابعه الصحيه</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100 rounded">الفعاليات الرياضيه</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100 rounded">بطولات ومسابقات</a>
+    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-yellow-100 rounded">الراحه والاستجمام</a>
+  </div>
+</div>
+
+  <!-- تعريف المؤسسة -->
+  <section class="max-w-7xl mx-auto px-4 py-12 text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-4">مؤسسة <span class="text-yellow-500">Dark King</span> الرياضية</h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-6">
+      نحن مؤسسة رياضية متخصصة تهدف إلى تطوير الأداء البدني وتحقيق حياة صحية أفضل من خلال خدمات متنوعة تشمل:
+    </p>
+    <ul class="max-w-2xl mx-auto text-gray-700 text-right list-disc pr-6 space-y-2">
+      <li>برامج تدريبية مخصصة لجميع المستويات.</li>
+      <li>متابعة صحية وتغذية متوازنة.</li>
+      <li>خدمات استشارات رياضية وذهنية.</li>
+      <li>تجهيزات ومعدات حديثة للتدريب.</li>
+      <li>ورش عمل وفعاليات رياضية دورية.</li>
+    </ul>
+  </section>
+
+<section class="max-w-7xl mx-auto px-4 pb-16">
+  <h3 class="text-xl font-bold text-gray-800 text-center mb-8">خدماتنا</h3>
+
+  <!-- Flex أفقي مع scroll على الموبايل -->
+  <div class="flex gap-4 overflow-x-auto py-2 scrollbar-hide">
+    
+    <!-- خدمة 1 -->
+    <div class="flex-shrink-0 w-48 sm:w-56 md:w-64 bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center">
+      <i class="fa-solid fa-dumbbell text-yellow-500 text-2xl sm:text-3xl mb-3"></i>
+      <h4 class="text-md sm:text-lg font-semibold mb-1 text-center">التدريب الرياضي</h4>
+      <p class="text-gray-600 text-xs sm:text-sm text-center">جلسات تدريبية مخصصة لرفع مستواك البدني.</p>
+    </div>
+
+    <!-- خدمة 2 -->
+    <div class="flex-shrink-0 w-48 sm:w-56 md:w-64 bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center">
+      <i class="fa-solid fa-apple-whole text-yellow-500 text-2xl sm:text-3xl mb-3"></i>
+      <h4 class="text-md sm:text-lg font-semibold mb-1 text-center">التغذية الصحية</h4>
+      <p class="text-gray-600 text-xs sm:text-sm text-center">خطط غذائية متوازنة تدعم أهدافك الرياضية.</p>
+    </div>
+
+    <!-- خدمة 3 -->
+    <div class="flex-shrink-0 w-48 sm:w-56 md:w-64 bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center">
+      <i class="fa-solid fa-heart-pulse text-yellow-500 text-2xl sm:text-3xl mb-3"></i>
+      <h4 class="text-md sm:text-lg font-semibold mb-1 text-center">المتابعة الصحية</h4>
+      <p class="text-gray-600 text-xs sm:text-sm text-center">متابعة مستمرة لصحتك العامة ولياقتك.</p>
+    </div>
+
+    <!-- خدمة 4 -->
+    <div class="flex-shrink-0 w-48 sm:w-56 md:w-64 bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center">
+      <i class="fa-solid fa-people-group text-yellow-500 text-2xl sm:text-3xl mb-3"></i>
+      <h4 class="text-md sm:text-lg font-semibold mb-1 text-center">الفعاليات الرياضية</h4>
+      <p class="text-gray-600 text-xs sm:text-sm text-center">تنظيم ورش عمل وفعاليات لزيادة الحماس.</p>
+    </div>
+
+    <!-- خدمة 5 -->
+    <div class="flex-shrink-0 w-48 sm:w-56 md:w-64 bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center">
+      <i class="fa-solid fa-medal text-yellow-500 text-2xl sm:text-3xl mb-3"></i>
+      <h4 class="text-md sm:text-lg font-semibold mb-1 text-center">بطولات ومسابقات</h4>
+      <p class="text-gray-600 text-xs sm:text-sm text-center">فرص للمشاركة والتنافس في بطولات مختلفة.</p>
+    </div>
+
+    <!-- خدمة 6 -->
+    <div class="flex-shrink-0 w-48 sm:w-56 md:w-64 bg-white p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition flex flex-col items-center">
+      <i class="fa-solid fa-spa text-yellow-500 text-2xl sm:text-3xl mb-3"></i>
+      <h4 class="text-md sm:text-lg font-semibold mb-1 text-center">الراحة والاستجمام</h4>
+      <p class="text-gray-600 text-xs sm:text-sm text-center">خدمات تساعد على الاسترخاء بعد التمرين.</p>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FAQ Section -->
+<section class="py-12" id="faq">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-8">الأسئلة الشائعة</h2>
+
+    <div class="space-y-3">
+      <!-- سؤال 1 -->
+      <details class="p-2 border-b border-gray-200">
+        <summary class="cursor-pointer text-md font-semibold text-gray-700 flex items-center gap-2">
+          <i class="fas fa-question-circle text-yellow-500"></i>
+          هل يمكنني تجربة تدريب مجاني قبل الاشتراك؟
+        </summary>
+        <p class="mt-1 text-gray-600 text-sm leading-relaxed pl-6">
+          نعم، نوفر جلسة تجريبية مجانية حتى تتعرف على أجواء المؤسسة والمدربين.
+        </p>
+      </details>
+
+      <!-- سؤال 2 -->
+      <details class="p-2 border-b border-gray-200">
+        <summary class="cursor-pointer text-md font-semibold text-gray-700 flex items-center gap-2">
+          <i class="fas fa-dumbbell text-green-500"></i>
+          هل لديكم مدربين متخصصين؟
+        </summary>
+        <p class="mt-1 text-gray-600 text-sm leading-relaxed pl-6">
+          نعم، لدينا فريق من المدربين المحترفين في مختلف المجالات الرياضية لتلبية احتياجات الجميع.
+        </p>
+      </details>
+
+      <!-- سؤال 3 -->
+      <details class="p-2 border-b border-gray-200">
+        <summary class="cursor-pointer text-md font-semibold text-gray-700 flex items-center gap-2">
+          <i class="fas fa-clock text-blue-500"></i>
+          ما مواعيد العمل؟
+        </summary>
+        <p class="mt-1 text-gray-600 text-sm leading-relaxed pl-6">
+          نعمل يومياً من الساعة 8 صباحاً حتى 11 مساءً بما في ذلك عطلات نهاية الأسبوع.
+        </p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="py-12" id="trainers">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 class="text-2xl font-bold text-center text-gray-800 mb-10">أفضل المدربين لمساعدتك في تحقيق أهدافك</h2>
+
+    <!-- Flex أفقي مع scroll على الموبايل -->
+    <div class="flex gap-4 overflow-x-auto py-2 scrollbar-hide">
+
+      <!-- مدرب 1 -->
+      <div class="flex-shrink-0 w-64 sm:w-72 md:w-80 p-4 sm:p-6 rounded-xl shadow-md border-2 border-yellow-400 text-center flex flex-col items-center">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">علي عرفات</h3>
+        <p class="text-sm text-gray-500 mb-4">متخصص في التدريب البدني وبرامج القوة لبناء جسم متناسق وصحي.</p>
+        <a href="https://wa.me/201234567890" target="_blank"
+           class="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white text-sm rounded-lg hover:bg-green-600 transition">
+          <i class="fab fa-whatsapp text-lg"></i>
+          اضغط للمراسلة
+        </a>
+      </div>
+
+      <!-- مدرب 2 -->
+      <div class="flex-shrink-0 w-64 sm:w-72 md:w-80 p-4 sm:p-6 rounded-xl shadow-md border-2 border-yellow-400 text-center flex flex-col items-center">
+        <h3 class="text-lg font-semibold text-gray-700 mb-2">كريم عامر</h3>
+        <p class="text-sm text-gray-500 mb-4">خبير في التغذية الرياضية وخطط إنقاص الوزن بشكل صحي وفعال.</p>
+        <a href="https://wa.me/201234567890" target="_blank"
+           class="inline-flex items-center gap-2 px-4 py-2 bg-green-500 text-white text-sm rounded-lg hover:bg-green-600 transition">
+          <i class="fab fa-whatsapp text-lg"></i>
+          اضغط للمراسلة
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- قسم الأرقام -->
+<section class="py-16">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-2xl font-bold text-gray-800 mb-10">
+      أرقام تعكس ثقتكم بنا
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- كارت المنتجات -->
+      <div class="border-2 border-yellow-500 rounded-xl p-6 flex flex-col items-center">
+        <i class="fas fa-dumbbell text-yellow-500 text-4xl mb-4"></i>
+        <h3 class="text-3xl font-bold text-gray-800">150+</h3>
+        <p class="text-gray-700 mt-2">منتج رياضي مميز</p>
+        <span class="text-sm text-gray-500 mt-1">نوفر لك كل ما تحتاجه للتمرين</span>
+      </div>
+
+      <!-- كارت العملاء -->
+      <div class="border-2 border-yellow-500 rounded-xl p-6 flex flex-col items-center">
+        <i class="fas fa-users text-yellow-500 text-4xl mb-4"></i>
+        <h3 class="text-3xl font-bold text-gray-800">500+</h3>
+        <p class="text-gray-700 mt-2">عميل يثق بنا</p>
+        <span class="text-sm text-gray-500 mt-1">ثقتكم سر استمرارنا</span>
+      </div>
+
+      <!-- كارت الجوائز -->
+      <div class="border-2 border-yellow-500 rounded-xl p-6 flex flex-col items-center">
+        <i class="fas fa-trophy text-yellow-500 text-4xl mb-4"></i>
+        <h3 class="text-3xl font-bold text-gray-800">20+</h3>
+        <p class="text-gray-700 mt-2">جائزة وإنجاز</p>
+        <span class="text-sm text-gray-500 mt-1">تكريم لجهودنا المستمرة</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- الفوتر -->
+<footer class="border-t mt-12 py-6">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <p class="text-gray-600 text-sm flex items-center justify-center gap-2">
+      <i class="fas fa-crown text-yellow-500"></i>
+      جميع الحقوق محفوظة © Dark King 2025
+    </p>
+  </div>
+</footer>
+
+
+<script>
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileModal = document.getElementById('mobile-modal');
+  const closeModal = document.getElementById('close-modal');
+
+  mobileBtn.addEventListener('click', () => {
+    mobileModal.classList.remove('hidden');
+    mobileModal.classList.add('flex');
+  });
+
+  closeModal.addEventListener('click', () => {
+    mobileModal.classList.add('hidden');
+    mobileModal.classList.remove('flex');
+  });
+
+  // إغلاق عند الضغط على الخلفية
+  mobileModal.addEventListener('click', (e) => {
+    if (e.target === mobileModal) {
+      mobileModal.classList.add('hidden');
+      mobileModal.classList.remove('flex');
+    }
+  });
+</script>
+</body>
+</html>
